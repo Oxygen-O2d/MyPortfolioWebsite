@@ -51,6 +51,9 @@
         ::-webkit-scrollbar-thumb:hover {
             background: #8892b0;
         }
+        .skill-bar-progress {
+            transition: width 1.5s cubic-bezier(0.25, 1, 0.5, 1);
+        }
     </style>
 </head>
 <body class="antialiased leading-relaxed">
@@ -188,40 +191,112 @@
 
         <!-- Skills Section -->
         <section id="skills" class="py-24 section-fade-in">
-            <h2 class="text-3xl font-bold mb-8 flex items-center gap-4"><span class="accent-color">03.</span> My Skills</h2>
+            <h2 class="text-3xl font-bold mb-12 flex items-center gap-4"><span class="accent-color">03.</span> My Skills</h2>
             <div class="max-w-4xl mx-auto">
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-                    <div class="flex flex-col items-center gap-2">
-                         <i data-lucide="cpu" class="w-12 h-12 accent-color"></i>
-                        <span class="font-semibold">Python</span>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
+                    <!-- Skill Item 1: Python -->
+                    <div class="w-full">
+                        <div class="flex justify-between items-center mb-2">
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="cpu" class="w-6 h-6 accent-color"></i>
+                                <span class="font-semibold text-slate-300">Python</span>
+                            </div>
+                            <span class="text-sm font-semibold accent-color">95%</span>
+                        </div>
+                        <div class="w-full bg-slate-700 rounded-full h-2.5">
+                            <div class="accent-bg h-2.5 rounded-full skill-bar-progress" style="width: 0%" data-width="95%"></div>
+                        </div>
                     </div>
-                    <div class="flex flex-col items-center gap-2">
-                         <i data-lucide="layers" class="w-12 h-12 accent-color"></i>
-                        <span class="font-semibold">TensorFlow</span>
+                    <!-- Skill Item 2: TensorFlow -->
+                    <div class="w-full">
+                        <div class="flex justify-between items-center mb-2">
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="brain-circuit" class="w-6 h-6 accent-color"></i>
+                                <span class="font-semibold text-slate-300">TensorFlow</span>
+                            </div>
+                            <span class="text-sm font-semibold accent-color">85%</span>
+                        </div>
+                        <div class="w-full bg-slate-700 rounded-full h-2.5">
+                            <div class="accent-bg h-2.5 rounded-full skill-bar-progress" style="width: 0%" data-width="85%"></div>
+                        </div>
                     </div>
-                     <div class="flex flex-col items-center gap-2">
-                         <i data-lucide="layers-3" class="w-12 h-12 accent-color"></i>
-                        <span class="font-semibold">PyTorch</span>
+                    <!-- Skill Item 3: PyTorch -->
+                    <div class="w-full">
+                        <div class="flex justify-between items-center mb-2">
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="brain-circuit" class="w-6 h-6 accent-color"></i>
+                                <span class="font-semibold text-slate-300">PyTorch</span>
+                            </div>
+                            <span class="text-sm font-semibold accent-color">88%</span>
+                        </div>
+                        <div class="w-full bg-slate-700 rounded-full h-2.5">
+                            <div class="accent-bg h-2.5 rounded-full skill-bar-progress" style="width: 0%" data-width="88%"></div>
+                        </div>
                     </div>
-                    <div class="flex flex-col items-center gap-2">
-                         <i data-lucide="brain-circuit" class="w-12 h-12 accent-color"></i>
-                        <span class="font-semibold">Scikit-learn</span>
+                    <!-- Skill Item 4: Scikit-learn -->
+                    <div class="w-full">
+                        <div class="flex justify-between items-center mb-2">
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="bar-chart-3" class="w-6 h-6 accent-color"></i>
+                                <span class="font-semibold text-slate-300">Scikit-learn</span>
+                            </div>
+                            <span class="text-sm font-semibold accent-color">92%</span>
+                        </div>
+                        <div class="w-full bg-slate-700 rounded-full h-2.5">
+                            <div class="accent-bg h-2.5 rounded-full skill-bar-progress" style="width: 0%" data-width="92%"></div>
+                        </div>
                     </div>
-                    <div class="flex flex-col items-center gap-2">
-                         <i data-lucide="database" class="w-12 h-12 accent-color"></i>
-                        <span class="font-semibold">SQL</span>
+                    <!-- Skill Item 5: SQL -->
+                    <div class="w-full">
+                        <div class="flex justify-between items-center mb-2">
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="database" class="w-6 h-6 accent-color"></i>
+                                <span class="font-semibold text-slate-300">SQL</span>
+                            </div>
+                            <span class="text-sm font-semibold accent-color">80%</span>
+                        </div>
+                        <div class="w-full bg-slate-700 rounded-full h-2.5">
+                            <div class="accent-bg h-2.5 rounded-full skill-bar-progress" style="width: 0%" data-width="80%"></div>
+                        </div>
                     </div>
-                    <div class="flex flex-col items-center gap-2">
-                         <i data-lucide="cloud" class="w-12 h-12 accent-color"></i>
-                        <span class="font-semibold">AWS</span>
+                    <!-- Skill Item 6: AWS -->
+                    <div class="w-full">
+                        <div class="flex justify-between items-center mb-2">
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="cloud" class="w-6 h-6 accent-color"></i>
+                                <span class="font-semibold text-slate-300">AWS</span>
+                            </div>
+                            <span class="text-sm font-semibold accent-color">75%</span>
+                        </div>
+                        <div class="w-full bg-slate-700 rounded-full h-2.5">
+                            <div class="accent-bg h-2.5 rounded-full skill-bar-progress" style="width: 0%" data-width="75%"></div>
+                        </div>
                     </div>
-                    <div class="flex flex-col items-center gap-2">
-                         <i data-lucide="container" class="w-12 h-12 accent-color"></i>
-                        <span class="font-semibold">Docker</span>
+                    <!-- Skill Item 7: Docker -->
+                    <div class="w-full">
+                        <div class="flex justify-between items-center mb-2">
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="container" class="w-6 h-6 accent-color"></i>
+                                <span class="font-semibold text-slate-300">Docker</span>
+                            </div>
+                            <span class="text-sm font-semibold accent-color">85%</span>
+                        </div>
+                        <div class="w-full bg-slate-700 rounded-full h-2.5">
+                            <div class="accent-bg h-2.5 rounded-full skill-bar-progress" style="width: 0%" data-width="85%"></div>
+                        </div>
                     </div>
-                    <div class="flex flex-col items-center gap-2">
-                         <i data-lucide="git-branch-plus" class="w-12 h-12 accent-color"></i>
-                        <span class="font-semibold">Git</span>
+                    <!-- Skill Item 8: Git -->
+                    <div class="w-full">
+                        <div class="flex justify-between items-center mb-2">
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="git-branch-plus" class="w-6 h-6 accent-color"></i>
+                                <span class="font-semibold text-slate-300">Git</span>
+                            </div>
+                            <span class="text-sm font-semibold accent-color">90%</span>
+                        </div>
+                        <div class="w-full bg-slate-700 rounded-full h-2.5">
+                            <div class="accent-bg h-2.5 rounded-full skill-bar-progress" style="width: 0%" data-width="90%"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -230,12 +305,21 @@
         <!-- Contact Section -->
         <section id="contact" class="py-24 text-center section-fade-in">
              <h2 class="text-3xl font-bold mb-4 flex items-center gap-4 justify-center"><span class="accent-color">04.</span> Get In Touch</h2>
-             <p class="max-w-xl mx-auto text-slate-400 mb-8">
-                I'm currently open to new opportunities and collaborations. Whether you have a question or just want to say hi, my inbox is always open. I'll get back to you as soon as I can!
+             <p class="max-w-xl mx-auto text-slate-400 mb-12">
+                I'm currently open to new opportunities and collaborations. Whether you have a question or just want to say hi, my inbox is always open. Feel free to send me a message using the form below!
              </p>
-             <a href="mailto:pratham.tailor@email.com" class="accent-bg text-gray-900 font-semibold px-8 py-4 rounded-md hover:opacity-90 transition-opacity text-lg">
-                Say Hello
-             </a>
+             <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="max-w-xl mx-auto text-left">
+                <div class="flex flex-col gap-6">
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <input type="text" name="name" placeholder="Your Name" required class="w-full bg-slate-700/50 border border-slate-600 rounded-md p-3 text-slate-300 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-accent-color transition duration-300">
+                        <input type="email" name="email" placeholder="Your Email" required class="w-full bg-slate-700/50 border border-slate-600 rounded-md p-3 text-slate-300 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-accent-color transition duration-300">
+                    </div>
+                    <textarea name="message" placeholder="Your Message" rows="5" required class="w-full bg-slate-700/50 border border-slate-600 rounded-md p-3 text-slate-300 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-accent-color transition duration-300"></textarea>
+                    <button type="submit" class="accent-bg text-gray-900 font-semibold px-8 py-3 rounded-md hover:opacity-90 transition-opacity text-lg w-full md:w-auto md:self-center">
+                        Send Message
+                    </button>
+                </div>
+            </form>
         </section>
 
     </main>
@@ -325,10 +409,22 @@
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('visible');
+
+                    // Animate skill bars when skills section is visible
+                    if (entry.target.id === 'skills') {
+                        const skillBars = entry.target.querySelectorAll('.skill-bar-progress');
+                        setTimeout(() => {
+                           skillBars.forEach(bar => {
+                                const targetWidth = bar.getAttribute('data-width');
+                                bar.style.width = targetWidth;
+                            });
+                        }, 200); // Small delay for better visual effect
+                    }
+
                     observer.unobserve(entry.target);
                 }
             });
-        }, { threshold: 0.1 });
+        }, { threshold: 0.2 });
 
         fadeInSections.forEach(section => {
             fadeInObserver.observe(section);
@@ -342,5 +438,7 @@
     </script>
 </body>
 </html>
+
+
 
 
