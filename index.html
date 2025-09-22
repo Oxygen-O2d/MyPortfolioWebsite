@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratham Tailor - AI/ML Engineer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a192f;
+            color: #ccd6f6;
+        }
+        .glassmorphism {
+            background: rgba(10, 25, 47, 0.85);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(45, 212, 191, 0.1);
+        }
+        .accent-color { color: #64ffda; }
+        .accent-bg { background-color: #64ffda; }
+        .accent-border { border-color: #64ffda; }
+        .nav-link {
+            transition: color 0.3s ease;
+        }
+        .nav-link:hover, .nav-link.active {
+            color: #64ffda;
+        }
+        .section-fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .section-fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0a192f;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #233554;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #8892b0;
+        }
+    </style>
+</head>
+<body class="antialiased leading-relaxed">
+
+    <!-- Header & Navigation -->
+    <header id="header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 glassmorphism shadow-md">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#hero" class="text-2xl font-bold accent-color">PT</a>
+            <nav class="hidden md:flex space-x-8 items-center">
+                <a href="#about" class="nav-link text-sm">About</a>
+                <a href="#projects" class="nav-link text-sm">Projects</a>
+                <a href="#skills" class="nav-link text-sm">Skills</a>
+                <a href="#contact" class="nav-link text-sm">Contact</a>
+                <a href="#" class="text-sm accent-color border border-current px-4 py-2 rounded-md hover:bg-teal-500/10 transition-colors duration-300">Resume</a>
+            </nav>
+            <button id="mobile-menu-btn" class="md:hidden">
+                <i data-lucide="menu" class="h-6 w-6 accent-color"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+             <a href="#about" class="block py-2 nav-link">About</a>
+             <a href="#projects" class="block py-2 nav-link">Projects</a>
+             <a href="#skills" class="block py-2 nav-link">Skills</a>
+             <a href="#contact" class="block py-2 nav-link">Contact</a>
+             <a href="#" class="block mt-2 text-center accent-color border border-current px-4 py-2 rounded-md hover:bg-teal-500/10 transition-colors duration-300">Resume</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 md:px-12 lg:px-24">
+
+        <!-- Hero Section -->
+        <section id="hero" class="min-h-screen flex items-center justify-center text-center section-fade-in">
+            <div>
+                <p class="text-lg accent-color mb-4">Hi, my name is</p>
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-slate-100">Pratham Tailor.</h1>
+                <h2 class="text-4xl md:text-6xl lg:text-7xl font-bold text-slate-400 mt-2">I build intelligent systems.</h2>
+                <p class="mt-6 max-w-2xl mx-auto text-slate-400">
+                    I'm an AI/ML engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on developing robust machine learning models and deploying them at scale.
+                </p>
+                <div class="mt-8 flex justify-center gap-4">
+                    <a href="#projects" class="accent-bg text-gray-900 font-semibold px-6 py-3 rounded-md hover:opacity-90 transition-opacity">View My Projects</a>
+                    <a href="#contact" class="text-accent-color border border-current px-6 py-3 rounded-md hover:bg-teal-500/10 transition-colors">Get In Touch</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-24 section-fade-in">
+            <h2 class="text-3xl font-bold mb-8 flex items-center gap-4"><span class="accent-color">01.</span> About Me</h2>
+            <div class="grid md:grid-cols-5 gap-12 items-center">
+                <div class="md:col-span-3 text-slate-400 space-y-4">
+                    <p>
+                        Hello! I'm Pratham, an engineer passionate about the intersection of data, algorithms, and software. My journey into the world of AI began during my studies, where I was fascinated by the potential of machines to learn from data and make intelligent decisions.
+                    </p>
+                    <p>
+                        Since then, I've had the privilege of working on a variety of challenging projects, from developing natural language processing models that understand human sentiment to building computer vision systems that can detect objects in real-time. My goal is to leverage my skills to create innovative solutions that solve real-world problems.
+                    </p>
+                    <p>
+                        When I'm not in front of a computer, I enjoy hiking, exploring new coffee shops, and keeping up with the latest advancements in the tech world.
+                    </p>
+                </div>
+                <div class="md:col-span-2">
+                    <div class="relative group">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-teal-400 to-blue-500 rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+                        <img src="https://placehold.co/400x400/0a192f/64ffda?text=AI+Engineer" alt="AI Engineer Pratham Tailor" class="relative rounded-lg w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-24 section-fade-in">
+             <h2 class="text-3xl font-bold mb-8 flex items-center gap-4"><span class="accent-color">02.</span> My Projects</h2>
+             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Project Card 1 -->
+                <div class="glassmorphism rounded-lg p-6 flex flex-col hover:-translate-y-2 transition-transform duration-300">
+                    <div class="flex justify-between items-center mb-4">
+                        <i data-lucide="folder-git-2" class="w-10 h-10 accent-color"></i>
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-slate-400 hover:accent-color transition-colors"><i data-lucide="github" class="w-5 h-5"></i></a>
+                            <a href="#" class="text-slate-400 hover:accent-color transition-colors"><i data-lucide="external-link" class="w-5 h-5"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-100 mb-2">Real-time Object Detection</h3>
+                    <p class="text-slate-400 text-sm flex-grow">A computer vision model using YOLOv8 to detect and classify multiple objects in a live video stream with high accuracy.</p>
+                    <div class="mt-4 flex flex-wrap gap-2 text-xs text-slate-400">
+                        <span class="bg-gray-700/50 px-2 py-1 rounded-full">Python</span>
+                        <span class="bg-gray-700/50 px-2 py-1 rounded-full">PyTorch</span>
+                        <span class="bg-gray-700/50 px-2 py-1 rounded-full">OpenCV</span>
+                        <span class="bg-gray-700/50 px-2 py-1 rounded-full">YOLOv8</span>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="glassmorphism rounded-lg p-6 flex flex-col hover:-translate-y-2 transition-transform duration-300">
+                    <div class="flex justify-between items-center mb-4">
+                        <i data-lucide="folder-git-2" class="w-10 h-10 accent-color"></i>
+                         <div class="flex space-x-3">
+                            <a href="#" class="text-slate-400 hover:accent-color transition-colors"><i data-lucide="github" class="w-5 h-5"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-100 mb-2">Customer Churn Prediction</h3>
+                    <p class="text-slate-400 text-sm flex-grow">Developed a classification model to predict customer churn, achieving 92% accuracy and enabling proactive retention strategies.</p>
+                    <div class="mt-4 flex flex-wrap gap-2 text-xs text-slate-400">
+                        <span class="bg-gray-700/50 px-2 py-1 rounded-full">Scikit-learn</span>
+                        <span class="bg-gray-700/50 px-2 py-1 rounded-full">Pandas</span>
+                        <span class="bg-gray-700/50 px-2 py-1 rounded-full">XGBoost</span>
+                        <span class="bg-gray-700/50 px-2 py-1 rounded-full">Flask</span>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="glassmorphism rounded-lg p-6 flex flex-col hover:-translate-y-2 transition-transform duration-300">
+                    <div class="flex justify-between items-center mb-4">
+                        <i data-lucide="folder-git-2" class="w-10 h-10 accent-color"></i>
+                         <div class="flex space-x-3">
+                            <a href="#" class="text-slate-400 hover:accent-color transition-colors"><i data-lucide="github" class="w-5 h-5"></i></a>
+                            <a href="#" class="text-slate-400 hover:accent-color transition-colors"><i data-lucide="external-link" class="w-5 h-5"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-100 mb-2">Neural Style Transfer</h3>
+                    <p class="text-slate-400 text-sm flex-grow">An implementation of a CNN-based model to transfer the artistic style of one image onto another, creating unique artworks.</p>
+                    <div class="mt-4 flex flex-wrap gap-2 text-xs text-slate-400">
+                        <span class="bg-gray-700/50 px-2 py-1 rounded-full">TensorFlow</span>
+                        <span class="bg-gray-700/50 px-2 py-1 rounded-full">Keras</span>
+                        <span class="bg-gray-700/50 px-2 py-1 rounded-full">Streamlit</span>
+                        <span class="bg-gray-700/50 px-2 py-1 rounded-full">PIL</span>
+                    </div>
+                </div>
+
+             </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-24 section-fade-in">
+            <h2 class="text-3xl font-bold mb-8 flex items-center gap-4"><span class="accent-color">03.</span> My Skills</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                    <div class="flex flex-col items-center gap-2">
+                         <i data-lucide="cpu" class="w-12 h-12 accent-color"></i>
+                        <span class="font-semibold">Python</span>
+                    </div>
+                    <div class="flex flex-col items-center gap-2">
+                         <i data-lucide="layers" class="w-12 h-12 accent-color"></i>
+                        <span class="font-semibold">TensorFlow</span>
+                    </div>
+                     <div class="flex flex-col items-center gap-2">
+                         <i data-lucide="layers-3" class="w-12 h-12 accent-color"></i>
+                        <span class="font-semibold">PyTorch</span>
+                    </div>
+                    <div class="flex flex-col items-center gap-2">
+                         <i data-lucide="brain-circuit" class="w-12 h-12 accent-color"></i>
+                        <span class="font-semibold">Scikit-learn</span>
+                    </div>
+                    <div class="flex flex-col items-center gap-2">
+                         <i data-lucide="database" class="w-12 h-12 accent-color"></i>
+                        <span class="font-semibold">SQL</span>
+                    </div>
+                    <div class="flex flex-col items-center gap-2">
+                         <i data-lucide="cloud" class="w-12 h-12 accent-color"></i>
+                        <span class="font-semibold">AWS</span>
+                    </div>
+                    <div class="flex flex-col items-center gap-2">
+                         <i data-lucide="container" class="w-12 h-12 accent-color"></i>
+                        <span class="font-semibold">Docker</span>
+                    </div>
+                    <div class="flex flex-col items-center gap-2">
+                         <i data-lucide="git-branch-plus" class="w-12 h-12 accent-color"></i>
+                        <span class="font-semibold">Git</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-24 text-center section-fade-in">
+             <h2 class="text-3xl font-bold mb-4 flex items-center gap-4 justify-center"><span class="accent-color">04.</span> Get In Touch</h2>
+             <p class="max-w-xl mx-auto text-slate-400 mb-8">
+                I'm currently open to new opportunities and collaborations. Whether you have a question or just want to say hi, my inbox is always open. I'll get back to you as soon as I can!
+             </p>
+             <a href="mailto:pratham.tailor@email.com" class="accent-bg text-gray-900 font-semibold px-8 py-4 rounded-md hover:opacity-90 transition-opacity text-lg">
+                Say Hello
+             </a>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-8 text-center text-slate-400 text-sm">
+        <div class="flex justify-center space-x-6 mb-4">
+            <a href="#" class="hover:accent-color transition-colors"><i data-lucide="github" class="w-6 h-6"></i></a>
+            <a href="#" class="hover:accent-color transition-colors"><i data-lucide="linkedin" class="w-6 h-6"></i></a>
+            <a href="#" class="hover:accent-color transition-colors"><i data-lucide="twitter" class="w-6 h-6"></i></a>
+        </div>
+        <p>Designed & Built by Pratham Tailor</p>
+        <p class="text-xs mt-1">Inspired by modern web design trends.</p>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            const icon = mobileMenuBtn.querySelector('i');
+            icon.setAttribute('data-lucide', mobileMenu.classList.contains('hidden') ? 'menu' : 'x');
+            lucide.createIcons(); // Re-render icons
+        });
+        
+        // Close mobile menu on link click
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                mobileMenuBtn.querySelector('i').setAttribute('data-lucide', 'menu');
+                lucide.createIcons();
+            });
+        });
+
+        // Header scroll effect
+        const header = document.getElementById('header');
+        let lastScrollY = window.scrollY;
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('py-2', 'shadow-lg');
+                header.classList.remove('py-4');
+            } else {
+                header.classList.remove('py-2', 'shadow-lg');
+                header.classList.add('py-4');
+            }
+             if (lastScrollY < window.scrollY && window.scrollY > 200) {
+                header.style.transform = 'translateY(-100%)';
+            } else {
+                header.style.transform = 'translateY(0)';
+            }
+            lastScrollY = window.scrollY;
+        });
+
+        // Scrollspy for navigation links
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('header nav a');
+
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.5
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    navLinks.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href').substring(1) === entry.target.id) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        }, observerOptions);
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+
+        // Section fade-in animation
+        const fadeInSections = document.querySelectorAll('.section-fade-in');
+        const fadeInObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        fadeInSections.forEach(section => {
+            fadeInObserver.observe(section);
+        });
+        
+        // Initial fade-in for hero section
+        window.addEventListener('load', () => {
+            document.getElementById('hero').classList.add('visible');
+        });
+
+    </script>
+</body>
+</html>
+
+
